@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildcat Database | High-Performance Embedded Key-Value Storage Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="description" content="High-performance embedded key-value storage engine with LSM-tree architecture, MVCC, lock-free concurrency, and ACID transactions. Built for modern applications demanding performance and reliability.">
+    <meta name="keywords" content="embedded database, key-value store, LSM tree, MVCC, ACID transactions, high performance database, storage engine, lock-free concurrency, crash recovery, golang database">
+    <meta name="author" content="Alex Gaetano Padula">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+
+    <link rel="canonical" href="https://wildcatdb.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wildcat | High-Performance Embedded Key-Value Storage Engine">
+    <meta property="og:description" content="LSM-tree architecture with MVCC, lock-free concurrency, and ACID transactions. Built for modern applications that demand both performance and reliability.">
+    <meta property="og:image" content="https://wildcatdb.com/assets/avatar.png">
+    <meta property="og:image:alt" content="Wildcat - High-Performance Storage Engine">
+    <meta property="og:url" content="https://wildcatdb.com/">
+    <meta property="og:site_name" content="Wildcat">
+    <meta property="og:locale" content="en_US">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <img src="assets/wildcat-logo.svg" alt="Wildcat Logo" class="logo-icon">
+        </div>
+        <nav class="nav">
+            <a href="https://github.com/guycipher/wildcat"><i class="fab fa-github"></i> GitHub</a>
+        </nav>
+    </div>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline"><strong>High-Performance Embedded Key-Value Storage Engine</strong></p>
+        <p class="description">
+            LSM-tree architecture with MVCC, lock-free concurrency, and ACID transactions.
+            Built for modern applications that demand both performance and reliability.
+        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/guycipher/wildcat" class="btn btn-secondary">GitHub</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title">High-Class Features</h2>
+        <p class="section-subtitle2">
+            Built with modern database design principles for mission-critical applications
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">High-Performance LSM</h3>
+                <p class="feature-description">
+                    Log-Structured Merge tree architecture optimized for high write throughput with
+                    automatic background compaction and intelligent level management.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 class="feature-title">Lock-Free MVCC</h3>
+                <p class="feature-description">
+                    Multi-Version Concurrency Control ensures non-blocking reads and writes with
+                    snapshot isolation and full ACID transaction support.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">WAL & Durability</h3>
+                <p class="feature-description">
+                    Write-Ahead Logging captures full transaction state for recovery and rehydration.
+                    Configurable sync options balance performance with durability requirements.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="feature-title">Concurrent Operations</h3>
+                <p class="feature-description">
+                    Scalable design with background flusher and compactor. Sustains 100K+ transactions
+                    per second with hundreds of thousands of reads per second.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <h3 class="feature-title">Crash Recovery</h3>
+                <p class="feature-description">
+                    Automatic crash recovery restores all in-flight and committed transactions.
+                    Incomplete transactions are preserved and accessible after crashes.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="feature-title">Advanced Indexing</h3>
+                <p class="feature-description">
+                    Range, prefix, and full iteration support with bidirectional traversal.
+                    Optional Bloom filters per SSTable for fast key lookups.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="architecture" id="architecture">
+    <div class="container">
+        <h2 class="section-title">Proven Architecture</h2>
+        <p class="section-subtitle">
+            Industry-standard components engineered for reliability and performance
+        </p>
+
+        <div class="arch-grid">
+            <div class="arch-item">
+                <h3>LSM Tree Storage</h3>
+                <p>Multi-level Log-Structured Merge tree with size-tiered and leveled compaction strategies for optimal space utilization and query performance.</p>
+            </div>
+
+            <div class="arch-item">
+                <h3>Version-Aware Skip Lists</h3>
+                <p>Lock-free skip list implementation with MVCC version chains for fast in-memory access and concurrent modification support.</p>
+            </div>
+
+            <div class="arch-item">
+                <h3>Immutable SSTables</h3>
+                <p>BTree-based SSTables with key-value separation optimization, leveraging efficient block storage with direct I/O operations.</p>
+            </div>
+
+            <div class="arch-item">
+                <h3>Atomic Block Manager</h3>
+                <p>Durable and concurrent block storage using direct, offset-based file I/O with pread/pwrite for optimal performance and control.</p>
+            </div>
+
+            <div class="arch-item">
+                <h3>Transaction Management</h3>
+                <p>Full ACID compliance with atomic write paths, snapshot isolation, and comprehensive crash recovery capabilities.</p>
+            </div>
+
+            <div class="arch-item">
+                <h3>Background Operations</h3>
+                <p>Multi-threaded background compaction and flushing with configurable concurrency limits and intelligent scheduling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="use-cases">
+    <div class="container">
+        <h2 class="section-title">Use Cases</h2>
+
+        <div class="use-case-grid">
+            <div class="use-case">
+                <h3>High-Throughput Applications</h3>
+                <p>Perfect for applications requiring sustained high write throughput with strong consistency guarantees and concurrent access patterns.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>Embedded Database Systems</h3>
+                <p>Lightweight embedded storage engine for applications requiring local data persistence.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>Real-Time Analytics</h3>
+                <p>Fast range queries and prefix iteration support make it ideal for real-time analytics and time-series data processing.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>Transaction Processing</h3>
+                <p>Full ACID compliance with snapshot isolation ensures data integrity for financial and mission-critical transaction processing.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>Caching & Session Storage</h3>
+                <p>High-performance key-value operations with configurable durability options for caching and session management systems.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>IoT & Edge Computing</h3>
+                <p>Lightweight footprint with robust crash recovery makes it suitable for IoT devices and edge computing scenarios.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Wildcat. Licensed under MPL 2.0. Built with passion for high-performance storage.</p>
+    </div>
+</footer>
+</body>
+</html>
